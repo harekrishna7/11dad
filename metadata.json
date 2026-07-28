@@ -1,0 +1,6 @@
+{
+  "name": "DADsync",
+  "description": "Corporate website for DADsync - Powering Northeast India's AI Future",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
