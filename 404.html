@@ -30,9 +30,9 @@
     </div>
   </main>
   <script>
-    // GitHub Pages fallback: map clean URLs (/about, /investors, ...)
+    // GitHub Pages SPA fallback: map clean URLs (/about, /investors, ...)
     // to their .html files so deep links never 404 on refresh/direct load/share.
-    // Unknown paths stay on this friendly 404 page.
+    // Unknown paths stay on this friendly 404 page.  (fix: deep links -> 404)
     (function () {
       var ROUTES = {
         '': 'index.html', 'index.html': 'index.html',
