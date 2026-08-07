@@ -10,6 +10,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.dadsync.in/" />
   <meta name="theme-color" content="#0b5ed7" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src 'self' https://www.openstreetmap.org; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com https://*.firebasedatabase.app wss://*.firebasedatabase.app; object-src 'none'; base-uri 'self'; form-action 'self' mailto:" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -26,20 +27,8 @@
   <meta name="twitter:description" content="The Dharmanagar AI &amp; Data Hub: Tier-III AI compute, GPU cloud, 1 PB+ sovereign storage." />
   <meta name="twitter:image" content="https://www.dadsync.in/images/server-racks.jpg" />
 
-  <!-- ===== Google Search Console Verification =====
-       HOW TO GET YOUR TOKEN:
-       1. Go to https://search.google.com/search-console and sign in with your Google account.
-       2. Click "Add property" -> choose "URL prefix" -> enter https://www.dadsync.in/ (or the exact domain you own).
-       3. Choose the "HTML tag" verification method.
-       4. Google shows a <meta> tag like:
-          <meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
-       5. Copy ONLY the long alphanumeric string inside content="...".
-       6. Replace REPLACE_WITH_GSC_TOKEN below with that string, then republish this file.
-       NOTE: Verification only succeeds after the site is deployed at the URL you verify (www.dadsync.in),
-       and this exact meta tag must be in the <head> of the page served at that URL. -->
   <meta name="google-site-verification" content="REPLACE_WITH_GSC_TOKEN" />
 
-  <!-- Structured data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,7 +37,7 @@
     "legalName": "Dharmanagar Ai Datasync Pvt. Ltd.",
     "url": "https://www.dadsync.in/",
     "logo": "https://www.dadsync.in/assets/favicon.svg",
-    "description": "DADsync builds the Dharmanagar AI & Data Hub — the first hyperscale-ready AI, cloud and data infrastructure in Northeast India.",
+    "description": "DADsync builds the Dharmanagar AI &amp; Data Hub — the first hyperscale-ready AI, cloud and data infrastructure in Northeast India.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Dharmanagar, North Tripura",
@@ -61,6 +50,27 @@
     "telephone": "+91-9366755056",
     "sameAs": [
       "https://www.instagram.com/dadsync2026"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "DADsync",
+    "url": "https://www.dadsync.in/",
+    "publisher": { "@type": "Organization", "name": "DADsync", "logo": { "@type": "ImageObject", "url": "https://www.dadsync.in/assets/favicon.svg" } }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Where is the DADsync hub located?", "acceptedAnswer": { "@type": "Answer", "text": "Dharmanagar, North Tripura, Tripura, India - 799250. Our location gives us a unique edge for serving Northeast India and neighbouring cross-border markets with ultra-low latency." } },
+      { "@type": "Question", "name": "What infrastructure does DADsync provide?", "acceptedAnswer": { "@type": "Answer", "text": "AI compute clusters (NVIDIA H100s), GPU cloud, 1 PB+ enterprise storage, cloud infrastructure, data processing pipelines, AI consulting, and 24/7 managed services - all with Tier-III equivalent reliability." } },
+      { "@type": "Question", "name": "Who can use DADsync services?", "acceptedAnswer": { "@type": "Answer", "text": "Government bodies, enterprises, startups, universities, research labs, and MSMEs across Northeast India and beyond. See our Industries page for details." } },
+      { "@type": "Question", "name": "How can I invest in the project?", "acceptedAnswer": { "@type": "Answer", "text": "We are raising Rs 55-80 Cr for Phase 1 with a target IRR of 24-28%. Detailed financials are available under NDA - visit the Investors page and request the deck." } }
     ]
   }
   </script>
@@ -79,7 +89,6 @@
     <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
   </defs></svg>
 
-  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html" aria-label="DADsync home">
@@ -96,6 +105,7 @@
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="hub.html">Dharmanagar Hub</a>
+        <a href="connection.html" class="">Connection</a>
         <a href="industries.html">Industries</a>
         <a href="careers.html">Careers</a>
         <a href="investors.html">Investors</a>
@@ -114,12 +124,12 @@
     </div>
   </header>
 
-  <!-- Mobile menu -->
   <div class="mobile-menu" data-mobile-menu>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="hub.html">Dharmanagar Hub</a>
+    <a href="connection.html" class="">Connection</a>
     <a href="industries.html">Industries</a>
     <a href="careers.html">Careers</a>
     <a href="investors.html">Investors</a>
@@ -128,12 +138,11 @@
   </div>
 
   <main>
-    <!-- ===== Hero ===== -->
     <section class="hero">
       <div class="container">
         <span class="hero-badge"><span class="live"></span> Next-Gen Infrastructure Available Now</span>
         <h1>Powering Northeast India's <span class="grad">AI Future</span></h1>
-        <p class="lead">AI &#8226; Cloud &#8226; Data Infrastructure &#8226; HPC. The premier hub for advanced computing, enabling enterprises, startups, and research across the region.</p>
+        <p class="lead">AI &amp; Cloud &amp; Data Infrastructure &#8226; HPC. The premier hub for advanced computing, enabling enterprises, startups, and research across the region.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary btn-lg" href="contact.html">Request a Demo
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -143,7 +152,6 @@
       </div>
     </section>
 
-    <!-- ===== Project Highlights (VISIBLE BY DEFAULT — fix #3) ===== -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head">
@@ -175,7 +183,6 @@
       </div>
     </section>
 
-    <!-- ===== Why DADsync ===== -->
     <section class="section">
       <div class="container">
         <div class="split">
@@ -212,14 +219,13 @@
       </div>
     </section>
 
-    <!-- ===== Services teaser (fix #6: home converts) ===== -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head">
           <span class="kicker"><span class="dot"></span> What We Offer</span>
           <h2>Enterprise infrastructure, made regional</h2>
           <p>From GPU clusters to sovereign storage — everything a modern AI organisation needs, hosted in Northeast India.</p>
-        </div>
+        </div>>
         <div class="grid grid-3">
           <div class="feature-card reveal">
             <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></svg></div>
@@ -245,7 +251,107 @@
       </div>
     </section>
 
-    <!-- ===== Proof band (location / government / impact) ===== -->
+    <section class="section" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker"><span class="dot"></span> Solutions</span>
+          <h2>Enterprise infrastructure for every mission</h2>
+          <p>Purpose-built offerings across the full AI and cloud stack — from accelerated compute to sovereign storage.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card reveal">
+            <span class="sol-tag">Infrastructure</span>
+            <h3>AI Infrastructure</h3>
+            <p>Hyperscale-ready compute clusters engineered for training, fine-tuning and inference — Tier-III equivalent reliability, in-region.</p>
+            <a class="sol-link" href="services.html#ai-compute">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="sol-card reveal">
+            <span class="sol-tag">Compute</span>
+            <h3>GPU Cloud</h3>
+            <p>On-demand NVIDIA GPU capacity for rendering, simulation and parallel workloads — no hardware overhead, billed as you go.</p>
+            <a class="sol-link" href="services.html#gpu-cloud">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="sol-card reveal">
+            <span class="sol-tag">HPC</span>
+            <h3>HPC Solutions</h3>
+            <p>High-performance computing for deep learning, rendering and complex simulations — clusters designed for the hardest problems.</p>
+            <a class="sol-link" href="services.html#hpc">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="sol-card reveal">
+            <span class="sol-tag">Business</span>
+            <h3>Enterprise Solutions</h3>
+            <p>Private cloud, 1 PB+ sovereign storage, and managed services for organisations that cannot compromise on security.</p>
+            <a class="sol-link" href="industries.html#enterprises">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="sol-card reveal">
+            <span class="sol-tag">Public Sector</span>
+            <h3>Government Solutions</h3>
+            <p>Sovereign, compliant data infrastructure for e-governance, citizen services and smart-city deployments across the region.</p>
+            <a class="sol-link" href="industries.html#government">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+          <article class="sol-card reveal">
+            <span class="sol-tag">Startups</span>
+            <h3>Startup Solutions</h3>
+            <p>Agile, cost-effective GPU and cloud access that lets startups prototype and scale AI models without heavy capex.</p>
+            <a class="sol-link" href="industries.html#startups">Learn more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="news">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker"><span class="dot"></span> News &amp; Insights</span>
+          <h2>Latest from DADsync</h2>
+          <p>Updates on the Dharmanagar hub, regional AI adoption, and infrastructure milestones.</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card reveal">
+            <div class="news-thumb"><img src="images/server-racks.jpg" alt="GPU racks at the Dharmanagar AI &amp; Data Hub" loading="lazy" width="800" height="450" /></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="news-cat">Infrastructure</span><span class="news-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Aug 2026</span></div>
+              <h3><a href="news.html">Dharmanagar AI &amp; Data Hub: Phase 1 construction blueprint released</a></h3>
+              <p class="news-excerpt">A look at the Tier-III equivalent facility design, power and cooling strategy, and the phased rollout across Northeast India.</p>
+              <a class="news-read" href="news.html">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="news-card reveal">
+            <div class="news-thumb"><img src="images/data-center.jpg" alt="Data centre corridor at DADsync" loading="lazy" width="800" height="450" /></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="news-cat">AI</span><span class="news-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Jul 2026</span></div>
+              <h3><a href="news.html">Why regional GPU capacity matters for India's AI ambition</a></h3>
+              <p class="news-excerpt">Latency, data sovereignty and cost — how in-region AI compute changes the economics for enterprises and research labs.</p>
+              <a class="news-read" href="news.html">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="news-card reveal">
+            <div class="news-thumb"><img src="images/team.jpg" alt="DADsync team working on infrastructure plans" loading="lazy" width="800" height="450" /></div>
+            <div class="news-body">
+              <div class="news-meta"><span class="news-cat">Company</span><span class="news-date"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Jun 2026</span></div>
+              <h3><a href="news.html">DADsync opens executive hiring for Phase 1 leadership team</a></h3>
+              <p class="news-excerpt">We're building the founding team — CTO, COO, CFO and senior engineering roles now open in Dharmanagar and remote.</p>
+              <a class="news-read" href="news.html">Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="news-cta mt-12">
+          <a class="btn btn-outline btn-lg" href="news.html">View All News
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="metric-band">
@@ -268,7 +374,6 @@
       </div>
     </section>
 
-    <!-- ===== FAQ (fix #6: conversion support) ===== -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head">
@@ -280,7 +385,7 @@
             <button class="faq-q" type="button">Where is the DADsync hub located?
               <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="faq-a"><div class="faq-a-inner">Dharmanagar, North Tripura, Tripura, India — 799250. Our location gives us a unique edge for serving Northeast India and neighbouring cross-border markets with ultra-low latency.</div></div>
+            <div class="faq-a"><div class="faq-a-inner">Dharmanagar, North Tripura, Tripura, India – 799250. Our location gives us a unique edge for serving Northeast India and neighbouring cross-border markets with ultra-low latency.</div></div>
           </div>
           <div class="faq-item">
             <button class="faq-q" type="button">What infrastructure does DADsync provide?
@@ -298,13 +403,12 @@
             <button class="faq-q" type="button">How can I invest in the project?
               <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="faq-a"><div class="faq-a-inner">We are raising ₹55–80 Cr for Phase 1 with a target IRR of 24–28%. Detailed financials are available under NDA — visit the Investors page and request the deck.</div></div>
+            <div class="faq-a"><div class="faq-a-inner">We are raising ₵55–80 Cr for Phase 1 with a target IRR of 24–28%. Detailed financials are available under NDA — visit the Investors page and request the deck.</div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Closing CTA (fix #6) ===== -->
     <section class="section">
       <div class="container">
         <div class="cta-band reveal">
@@ -321,7 +425,6 @@
     </section>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
@@ -341,6 +444,7 @@
           <h4>Company</h4>
           <ul>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="news.html">News &amp; Blog</a></li>
             <li><a href="careers.html">Careers</a></li>
             <li><a href="investors.html">Investors</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -349,10 +453,11 @@
         <div class="footer-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="services.html">AI Compute Platform</a></li>
-            <li><a href="services.html">GPU Cloud</a></li>
-            <li><a href="services.html">Enterprise Storage</a></li>
-            <li><a href="services.html">Managed Services</a></li>
+            <li><a href="services.html#ai-compute">AI Compute Platform</a></li>
+            <li><a href="services.html#gpu-cloud">GPU Cloud</a></li>
+            <li><a href="services.html#hpc">HPC Solutions</a></li>
+            <li><a href="services.html#enterprise-storage">Enterprise Storage</a></li>
+            <li><a href="services.html#managed-services">Managed Services</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -378,11 +483,11 @@
         <div class="legal-links">
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms of Service</a>
-        </div>
+        </div>>
       </div>
     </div>
   </footer>
 
-  <script src="assets/app.js"></script>
+  <script src="assets/app.js" defer></script>
 </body>
 </html>
