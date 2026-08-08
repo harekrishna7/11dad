@@ -1,3 +1,1 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.dadsync.in/sitemap.xml
+TODO_ROBOTS
